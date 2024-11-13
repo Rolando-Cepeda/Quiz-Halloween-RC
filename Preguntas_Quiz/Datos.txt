@@ -1,0 +1,2 @@
+# URL de preguntas (https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=multiple)
+# FAVICON.- https://www.reshot.com/free-svg-icons/halloween/?page=2
