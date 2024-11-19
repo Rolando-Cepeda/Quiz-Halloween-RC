@@ -4,21 +4,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HALLOWEEN </title>
+	<title>Quiz de Halloween</title>
+	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="icon-golden-skull.svg" type="image/x-icon" />
 </head>
 
 <body>
-	<h1>QUIZ DE HALLOWEEN</h1>
+	<header>
+		<h1>🎃 Quiz de Halloween 🎃 </h1>
+	</header>
 
-	<div id="contenedor">
-	</div>
+	<main>
+		<section id="grafica">
+			<canvas id="chatResultados"></canvas>
+		</section>
+		<button id="comenzarQuiz" class="btn-principal" type="button"
+			onclick="window.location.href='question.html'">¡Comenzar Quiz!</button>
+	</main>
+	<footer>
+		<p>© 2024 Quiz de Halloween. Todos los derechos reservados.</p>
+	</footer>
 
-	<div id="contenedor_preguntas">
-		<button type="button" onclick="answer()">Preguntas</button>
-	</div>
-	<script src="Halloween _2.js"></script>
-
+	<script src="home.js"></script>
 </body>
 
 </html>

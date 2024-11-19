@@ -56,10 +56,11 @@ const crearPreguntas = (preguntas) => {
 
     //6.2.- Mezclamos respuestas (correctas e incorrectas)
     const todasRespuestas = [
-      preguntaObjInfo.respuestaCorrecta,
       preguntaObjInfo.respuestasIncorrectas,
-
+      preguntaObjInfo.respuestaCorrecta
     ].sort(() => Math.random() - 0.5);
+    
+    
     
 
     //creamos los botones para las respuestas:
