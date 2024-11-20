@@ -20,7 +20,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #1a1a1a;
-  background-image: url("halloween2.png");
+  background-image: url("halloween.png");
   /* background-size: 50% 50%; */
   /* background-size: cover; */
   background-size: contain;
@@ -91,10 +91,12 @@ main {
   max-width: 80%;
   height: 500px;
   margin: 20px auto;
-  padding: 10px;
-  background-color: #292b2c;
+  padding: 15px;
+  /* background-color: #292b2c; */
+  background-color: #f19c56;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); */
+  box-shadow: 2px 0px 8px 4px #875b0b;
 }
 
 .chart-container {
@@ -104,10 +106,12 @@ main {
   flex-direction: column;
 }
 
+
+/* Botón para iniciar el quiz */
 button.btn-principal {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #ff5733;
+  background-color: #ff4500;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -116,9 +120,10 @@ button.btn-principal {
 }
 
 button.btn-principal:hover {
-  background-color: #ff4500;
+  background-color: #ff8c00;
 }
 
+/* Botón de la página de resultados */
 button.btn_principal {
   margin-top: 20px;
   padding: 15px 30px;
@@ -132,9 +137,10 @@ button.btn_principal {
   text-align: center;
 }
 
+
 button.btn_principal:hover {
   background-color: #ff8c00;
-  /* Color verde oscuro */
+  
 }
 
 
@@ -143,4 +149,29 @@ footer {
   background-color: #333333;
   color: #999;
   text-align: center;
+}
+
+/* Campo input */
+
+input#nameUsuario {
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f7f3e9;
+    color: #333;
+}
+
+input#nameUsuario::placeholder {
+    color: #c66;
+    font-style: italic;
+}
+
+input#nameUsuario:focus {
+    border-color: #ff8c00;
+    outline: none;
+    background-color: #fff8e1;
 }

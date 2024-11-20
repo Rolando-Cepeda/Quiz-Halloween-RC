@@ -11,20 +11,26 @@
 </head>
 
 <body>
-	
+
 	<header>
 		<h1>🎃 Quiz de Halloween 🎃 </h1>
 	</header>
 
 	<main>
+		<label for="nameUsuario">🌟 ¿Listo para demostrar tu conocimiento en Halloween? 🌟</label>
+		<p>¡Escribe tu nombre y presiona comenzar para jugar!</p>
+		<br>
+		<input id="nameUsuario" type="text" name="nameUsuario" placeholder="Escribe tu nombre" required autofocus>
+		<br><br>
+
+		<button id="comenzarQuiz" class="btn-principal" type="button" onclick="comenzarQuiz()">¡Comenzar Quiz!</button>
 		<section id="grafica">
 			<div class="chart-container">
 				<canvas id="chartResultados"></canvas>
 			</div>
-			
+
 		</section>
-		<button id="comenzarQuiz" class="btn-principal" type="button"
-			onclick="window.location.href='question.html'">¡Comenzar Quiz!</button>
+
 	</main>
 	<footer>
 		<p>© 2024 Quiz de Halloween. Todos los derechos reservados.</p>
