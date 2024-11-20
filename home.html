@@ -7,6 +7,7 @@
 	<title>Quiz de Halloween</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="icon-golden-skull.svg" type="image/x-icon" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Importar Chart.js -->
 </head>
 
 <body>
@@ -16,7 +17,10 @@
 
 	<main>
 		<section id="grafica">
-			<canvas id="chatResultados"></canvas>
+			<div class="chart-container">
+				<canvas id="chartResultados"></canvas>
+			</div>
+			
 		</section>
 		<button id="comenzarQuiz" class="btn-principal" type="button"
 			onclick="window.location.href='question.html'">¡Comenzar Quiz!</button>
