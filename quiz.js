@@ -87,6 +87,7 @@ fetch("https://opentdb.com/api.php?amount=10&category=12&difficulty=medium&type=
   .then((data) => {
       preguntas.push(
           ...data.results.map((pregunta) => ({
+              categoria: pregunta.category,
               pregunta: pregunta.question,
               respuestas: [...pregunta.incorrect_answers, pregunta.correct_answer].sort(() => Math.random() - 0.5),
               respuestaCorrecta: pregunta.correct_answer,

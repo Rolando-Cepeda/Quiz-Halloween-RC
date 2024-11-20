@@ -1,53 +1,4 @@
-/* body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
-    color: #f8f8f8;
-    text-align: center;
-  }
-  
-  header {
-    background-color: #ff5733;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  .contenedor {
-    padding: 20px;
-  }
-  
-  .btn-principal {
-    padding: 15px 30px;
-    background-color: #ff5733;
-    border: none;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-principal:hover {
-    background-color: #c4451a;
-  }
-  
-  .preguntaUser {
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #292b2c;
-    border-radius: 8px;
-    text-align: left;
-  }
-  
-  .preguntaUser h3 {
-    font-size: 1.2rem;
-  }
-  
+/*
   .opcion {
     padding: 10px 15px;
     margin: 5px;
@@ -64,31 +15,34 @@
   
   .opcion:active {
     transform: scale(0.98);
-  }
-  #chartResultados {
-    max-width: 600px;
-    max-height: 400px;
-    margin: 0 auto;
-} */
+   */
 
-/* body {
-  font-family: 'Arial', sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  background-image: url("halloween2.png");
+  /* background-size: 50% 50%; */
+  /* background-size: cover; */
+  background-size: contain;
+  color: #f8f8f8;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
-  color: #f8f8f8;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+    /* Asegura que el body al menos tenga la altura de la ventana */
 }
 
+/* Estilos del contenedor principal */
 header {
-  background-color: #ff5733;
   padding: 20px;
-  margin-bottom: 20px;
+  background-color: #333333;
 }
 
 h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: #ff8c00;
 }
 
 #contenedor_preguntas {
@@ -120,31 +74,17 @@ h1 {
 }
 
 .opcion:hover {
-  background-color: #666;
-} */
-
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: #f8f8f8;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-header {
-  padding: 20px;
-  background-color: #333333;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #ff8c00;
+  background-color: #ff5733;
 }
 
 main {
   padding: 20px;
+  flex: 1;
+  /*Hace que el main tome el espacio disponible*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Centrar el contenido horizontalmente */
 }
 
 #chartResultados {
@@ -179,9 +119,28 @@ button.btn-principal:hover {
   background-color: #ff4500;
 }
 
+button.btn_principal {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #ff4500;
+  /* Color verde */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+button.btn_principal:hover {
+  background-color: #ff8c00;
+  /* Color verde oscuro */
+}
+
+
 footer {
   padding: 10px;
   background-color: #333333;
   color: #999;
+  text-align: center;
 }
-
