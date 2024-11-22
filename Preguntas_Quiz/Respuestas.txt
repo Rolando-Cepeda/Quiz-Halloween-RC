@@ -1,2 +1,0 @@
-##FUNCIONES Lambda.- Cuando estáN INLINE, solo pueden devolver un valor, hay que ponerles LLAVES
-	para devolver más de un valor.

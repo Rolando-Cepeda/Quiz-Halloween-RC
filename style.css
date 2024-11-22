@@ -1,22 +1,3 @@
-/*
-  .opcion {
-    padding: 10px 15px;
-    margin: 5px;
-    background-color: #444;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .opcion:hover {
-    background-color: #666;
-  }
-  
-  .opcion:active {
-    transform: scale(0.98);
-   */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #1a1a1a;
@@ -175,3 +156,22 @@ input#nameUsuario:focus {
     outline: none;
     background-color: #fff8e1;
 }
+
+/*
+  .opcion {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #444;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .opcion:hover {
+    background-color: #666;
+  }
+  
+  .opcion:active {
+    transform: scale(0.98);
+   */
